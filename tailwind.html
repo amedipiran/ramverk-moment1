@@ -9,14 +9,14 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css" rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <title>Moment I | Tailwind</title>
+    <title>Moment I - Tailwind</title>
 </head>
 <body>
     
 <nav class="border-gray-200 bg-gray-50 dark:bg-gray-100 dark:border-gray-700">
     <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
       <a href="index.html" class="flex items-center">
-          <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-black">Ramverk | Moment 1</span>
+          <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-black">Ramverk - Moment I</span>
       </a>
       <button data-collapse-toggle="navbar-solid-bg" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-solid-bg" aria-expanded="false">
           <span class="sr-only">Open main menu</span>
@@ -42,6 +42,67 @@
       </div>
     </div>
   </nav>
+
+
+  <section class="container mx-auto mt-10 p-5 bg-white shadow-md rounded">
+    <form>
+        <!-- Input-fält -->
+        <div class="mb-4">
+            <label for="tailwind-name" class="block text-sm font-medium text-gray-700">Namn:</label>
+            <input type="text" id="tailwind-name" name="name" placeholder="Ditt fullständiga namn..." class="mt-1 p-2 w-full border rounded-md">
+        </div>
+
+        <!-- Textarea -->
+        <div class="mb-4">
+            <label for="tailwind-message" class="block text-sm font-medium text-gray-700">Meddelande:</label>
+            <textarea id="tailwind-message" name="message" rows="4" placeholder="Ditt meddelande..." class="mt-1 p-2 w-full border rounded-md"></textarea>
+        </div>
+
+        <!-- Checkbox -->
+        <div class="mb-4 flex items-center">
+            <input type="checkbox" id="tailwind-checkbox" name="checkbox" class="mr-2">
+            <label for="tailwind-checkbox" class="text-sm text-gray-700">Jag gillar godis</label>
+        </div>
+
+        <!-- Select-lista -->
+        <div class="mb-4">
+            <label for="tailwind-selectLista" class="block text-sm font-medium text-gray-700">Jag föredrar</label>
+            <select id="tailwind-selectLista" name="selectLista" class="mt-1 p-2 w-full border rounded-md">
+                <option>Hundar</option>
+                <option>Katter</option>
+                <option>Inga</option>
+            </select>
+        </div>
+
+        <!-- Submit-knapp -->
+        <button type="submit" class="bg-blue-500 hover:bg-blue-600 text-white p-2 rounded">Skicka</button>
+    </form>
+</section>
+
+
+<section class="container mx-auto mt-10 p-5 bg-white shadow-md rounded">
+  <h2 class="text-xl font-bold mb-5">Data från formuläret - Tailwind</h2>
+  <table class="min-w-full border-collapse border border-gray-300">
+      <thead class="bg-gray-200">
+          <tr>
+              <th class="px-4 py-2 border">Namn</th>
+              <th class="px-4 py-2 border">Meddelande</th>
+              <th class="px-4 py-2 border">Gillar godis</th>
+              <th class="px-4 py-2 border">Föredrar</th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr>
+              <td class="px-4 py-2 border"></td>
+              <td class="px-4 py-2 border"></td>
+              <td class="px-4 py-2 border"></td>
+              <td class="px-4 py-2 border"></td>
+          </tr>
+      </tbody>
+  </table>
+</section>
+
+
   <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
 </body>
