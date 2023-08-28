@@ -23,6 +23,9 @@
             <li class="nav-item">
               <a class="nav-link" href="tailwind.html">Tailwind</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="publicering.html">Publicering</a>
+            </li>
           </ul>
         </div>
       </nav>
@@ -30,7 +33,7 @@
 <main class="d-flex align-items-center flex-column bd-highlight mb-3 w-100">
   <h1>Formulär & Tabell - Bootstrap</h1>
   <section class="container mt-5">
-    <form action="din-server-sida-här" method="post">
+    <form>
         <!-- Input-fält -->
         <div class="form-group">
             <label for="name">Namn:</label>
@@ -60,23 +63,24 @@
         </div>
 
         <!-- Submit-knapp -->
-        <button type="submit" class="btn btn-primary">Skicka</button>
+        <button id="submit" type="submit" class="btn btn-primary">Skicka</button>
     </form>
 </section>
 
 <section class="container mt-5">
   <h2 class="mb-4">Data från formulär</h2>
-  <table class="table table-bordered">
+  <table class="table table-bordered" id="dataTable">
       <thead class="thead-light">
           <tr>
               <th>Namn</th>
               <th>Meddelande</th>
               <th>Gillar godis</th>
               <th>Föredrar</th>
+
           </tr>
       </thead>
-      <tbody>
-          <tr>
+      <tbody id="listContainer">
+          <tr >
               <td></td>
               <td></td>
               <td></td>

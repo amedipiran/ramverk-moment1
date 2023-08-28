@@ -36,7 +36,10 @@
           <li>
             <a href="tailwind.html" class="block py-2 pl-3 pr-4 text-gray-900 rounded md:border-0  md:p-0 md:dark:text-gray-700 dark:text-white ">Tailwind</a>
           </li>
-
+          <li>
+            <a href="publicering.html" class="block py-2 pl-3 pr-4 text-gray-300  rounded md:bg-transparent md:text-gray-500 md:p-0 md:dark:text-gray-500 dark:bg-gray-500 md:dark:bg-transparent
+            md:hover:text-gray-700 md:p-0 dark:text-white md:dark:hover:text-gray-700 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent" >Publicering</a>
+          </li>
         </ul>
       </div>
     </div>
@@ -75,28 +78,26 @@
         </div>
 
         <!-- Submit-knapp -->
-        <button type="submit" class="bg-blue-500 hover:bg-blue-600 text-white p-2 rounded">Skicka</button>
+        <button type="submit" class="bg-blue-500 hover:bg-blue-600 text-white p-2 rounded" id="tailwind-submit">Skicka</button>
     </form>
 </section>
 
 
 <section class="container mx-auto mt-10 p-5 bg-white shadow-md rounded">
   <h2 class="text-xl font-bold mb-5">Data från formuläret - Tailwind</h2>
-  <table class="min-w-full border-collapse border border-gray-300">
+  <table class="min-w-full border-collapse border border-gray-300" id="tailwind-dataTable">
       <thead class="bg-gray-200">
           <tr>
               <th class="px-4 py-2 border">Namn</th>
               <th class="px-4 py-2 border">Meddelande</th>
               <th class="px-4 py-2 border">Gillar godis</th>
               <th class="px-4 py-2 border">Föredrar</th>
+
           </tr>
       </thead>
-      <tbody>
+      <tbody id="tailwind-listContainer">
           <tr>
-              <td class="px-4 py-2 border"></td>
-              <td class="px-4 py-2 border"></td>
-              <td class="px-4 py-2 border"></td>
-              <td class="px-4 py-2 border"></td>
+
           </tr>
       </tbody>
   </table>
@@ -105,5 +106,6 @@
 
   <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
+  <script src="tailwind-main.js"></script>
 </body>
 </html>
